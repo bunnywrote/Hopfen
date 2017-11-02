@@ -10,8 +10,6 @@
         <property name="product" value="Bier!"></property>
     </bean>
 
-    <bean class="Implementation.ConsumerService">
-        <!--<property name="producerService" ref="producerService"></property>-->
-    </bean>
+    <bean class="Implementation.ConsumerService"></bean>
 
 </beans>
