@@ -12,7 +12,7 @@ import java.util.List;
 public class StockController {
 
     @Autowired
-    StockService stockService;
+    private StockService stockService;
 
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody List<String> GetProducts(){
