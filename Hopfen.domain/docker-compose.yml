@@ -1,0 +1,15 @@
+registry:
+  build: ./registry-service
+  ports:
+    - "1111:1111"
+author:
+  build: ./author-service
+  links:
+    - registry:registry
+frontend:
+  build: ./frontend-service
+  links:
+    - registry:registry
+    - author:author-service
+  ports:
+    - "8080:8080"

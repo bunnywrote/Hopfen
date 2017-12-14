@@ -6,6 +6,12 @@
 
     <groupId>Hopfen</groupId>
     <artifactId>Hopfen.domain</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>author-service</module>
+        <module>frontend-service</module>
+        <module>registry-service</module>
+    </modules>
 
 </project>
